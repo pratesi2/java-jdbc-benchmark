@@ -1,37 +1,50 @@
 package it.matteopratesi.config;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.util.List;
 
 public class Properties {
 
-    private static Properties instance;
-    private java.util.Properties props;
+    private String jdbcUrl;
+    private String user;
+    private String password;
+    private List<String> sql;
 
-    private Properties() {
-        try (InputStream input = getClass().getClassLoader().getResourceAsStream("configuration.properties")) {
-            props = new java.util.Properties();
-            props.load(input);
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
-    }
-
-    public static Properties get() {
-        if (instance == null)
-            instance = new Properties();
-        return instance;
+    public Properties(String jdbcUrl, String user, String password, List<String> sql) {
+        this.jdbcUrl = jdbcUrl;
+        this.user = user;
+        this.password = password;
+        this.sql = sql;
     }
 
     public String getJdbcUrl() {
-        return props.getProperty("jdbcUrl");
+        return jdbcUrl;
+    }
+
+    public void setJdbcUrl(String jdbcUrl) {
+        this.jdbcUrl = jdbcUrl;
     }
 
     public String getUser() {
-        return props.getProperty("user");
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public String getPassword() {
-        return props.getProperty("password");
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public List<String> getSql() {
+        return sql;
+    }
+
+    public void setSql(List<String> sql) {
+        this.sql = sql;
     }
 }
