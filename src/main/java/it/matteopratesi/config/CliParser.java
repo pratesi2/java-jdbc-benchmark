@@ -30,7 +30,7 @@ import java.util.concurrent.Callable;
  * and {@link StatisticsPrinter} to use in the process
  */
 @CommandLine.Command(name = "jdbcBenchmark", mixinStandardHelpOptions = true, version = "jdbcBenchmark 1.0",
-        description = "Execute a benchmark analisys to the given PostGRE database")
+        description = "Execute a benchmark analysis to the given PostGRE database")
 public class CliParser implements Callable<Integer> {
 
     @CommandLine.Option(names = {"-c", "--connection-url"}, description = "jdbc:postgresql://<server>:<port>/<dbName>")
