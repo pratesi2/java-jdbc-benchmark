@@ -36,3 +36,4 @@ Here there are some improvements to be implemented on this project.
 - Scan the test file via a Reader instead of loading all lines in memory.
 - Parse test file for safely recognize DML operations types
 - Improve communication with connection factory
+- Improve operation time measurement method
