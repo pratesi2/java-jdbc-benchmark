@@ -20,7 +20,7 @@ public class MapStatisticsCollector implements StatisticsCollector {
     /**
      *  Store the duration of the DML request performed
      * @param operationType type of DML request - see {@link OperationType}
-     * @param duration time, in millis, consumed for the execution of DML request
+     * @param duration time, in nanoseconds, consumed for the execution of DML request
      */
     @Override
     public void collect(OperationType operationType, Long duration) {

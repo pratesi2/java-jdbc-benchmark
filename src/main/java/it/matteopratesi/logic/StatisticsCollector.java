@@ -13,7 +13,7 @@ public interface StatisticsCollector {
     /**
      * Add the duration to the map for the recorded DML request
      * @param operationType the DML request type
-     * @param duration in millis of the operation
+     * @param duration in nanoseconds of the operation
      */
     void collect(OperationType operationType, Long duration);
 

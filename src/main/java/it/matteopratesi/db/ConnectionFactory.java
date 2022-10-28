@@ -42,7 +42,7 @@ public class ConnectionFactory {
      * @param conn the connection used to prepare the statement
      * @param stmt the statement to execute
      * @param commit indicate if there is need to send a commit
-     * @return the execution time of the statement
+     * @return the execution time of the statement in nanoseconds
      */
     public Long executeStatement(Connection conn, String stmt, Boolean commit) {
         try (PreparedStatement s = conn.prepareStatement(stmt)) {
