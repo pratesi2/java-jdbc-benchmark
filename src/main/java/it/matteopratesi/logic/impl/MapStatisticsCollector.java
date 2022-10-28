@@ -1,7 +1,7 @@
-package it.matteopratesi.analyzer.impl;
+package it.matteopratesi.logic.impl;
 
 import it.matteopratesi.OperationType;
-import it.matteopratesi.analyzer.StatisticsCollector;
+import it.matteopratesi.logic.StatisticsCollector;
 
 import java.util.HashMap;
 import java.util.LinkedList;

@@ -1,6 +1,6 @@
 package it.matteopratesi;
 
-import it.matteopratesi.analyzer.*;
+import it.matteopratesi.logic.*;
 import it.matteopratesi.config.Properties;
 import it.matteopratesi.db.ConnectionFactory;
 

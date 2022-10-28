@@ -1,7 +1,7 @@
-package it.matteopratesi.analyzer.impl;
+package it.matteopratesi.logic.impl;
 
-import it.matteopratesi.analyzer.JdbcStatistics;
-import it.matteopratesi.analyzer.StatisticsPrinter;
+import it.matteopratesi.logic.JdbcStatistics;
+import it.matteopratesi.logic.StatisticsPrinter;
 
 import java.util.logging.Logger;
 

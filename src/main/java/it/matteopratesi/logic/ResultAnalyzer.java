@@ -1,4 +1,4 @@
-package it.matteopratesi.analyzer;
+package it.matteopratesi.logic;
 
 import java.util.List;
 import java.util.Map;

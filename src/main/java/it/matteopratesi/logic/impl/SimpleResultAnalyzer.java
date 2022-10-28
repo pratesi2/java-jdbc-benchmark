@@ -1,8 +1,8 @@
-package it.matteopratesi.analyzer.impl;
+package it.matteopratesi.logic.impl;
 
 import it.matteopratesi.OperationType;
-import it.matteopratesi.analyzer.JdbcStatistics;
-import it.matteopratesi.analyzer.ResultAnalyzer;
+import it.matteopratesi.logic.JdbcStatistics;
+import it.matteopratesi.logic.ResultAnalyzer;
 
 import java.util.List;
 import java.util.Map;

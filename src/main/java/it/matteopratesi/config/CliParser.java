@@ -1,12 +1,12 @@
 package it.matteopratesi.config;
 
 import it.matteopratesi.JdbcBenchmarkApplication;
-import it.matteopratesi.analyzer.ResultAnalyzer;
-import it.matteopratesi.analyzer.StatisticsCollector;
-import it.matteopratesi.analyzer.StatisticsPrinter;
-import it.matteopratesi.analyzer.impl.ConsoleStatisticPrinter;
-import it.matteopratesi.analyzer.impl.MapStatisticsCollector;
-import it.matteopratesi.analyzer.impl.SimpleResultAnalyzer;
+import it.matteopratesi.logic.ResultAnalyzer;
+import it.matteopratesi.logic.StatisticsCollector;
+import it.matteopratesi.logic.StatisticsPrinter;
+import it.matteopratesi.logic.impl.ConsoleStatisticPrinter;
+import it.matteopratesi.logic.impl.MapStatisticsCollector;
+import it.matteopratesi.logic.impl.SimpleResultAnalyzer;
 import picocli.CommandLine;
 
 import java.io.File;
