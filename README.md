@@ -37,3 +37,4 @@ Here there are some improvements to be implemented on this project.
 - Parse test file for safely recognize DML operations types
 - Improve communication with connection factory
 - Improve operation time measurement method
+- Enable extension of Collector, Printer and Analyzer with reflection in configuration
