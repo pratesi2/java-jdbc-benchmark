@@ -1,5 +1,10 @@
 package it.matteopratesi.analyzer;
 
+import com.google.gson.GsonBuilder;
+
+/**
+ * Object containing the statistic of the analysis
+ */
 public class JdbcStatistics {
     private Long minInsert;
     private Double avgInsert;
@@ -115,19 +120,6 @@ public class JdbcStatistics {
 
     @Override
     public String toString() {
-        return "JdbcStatistics{" +
-                "minInsert=" + minInsert +
-                ", avgInsert=" + avgInsert +
-                ", maxInsert=" + maxInsert +
-                ", minSelect=" + minSelect +
-                ", avgSelect=" + avgSelect +
-                ", maxSelect=" + maxSelect +
-                ", minUpdate=" + minUpdate +
-                ", avgUpdate=" + avgUpdate +
-                ", maxUpdate=" + maxUpdate +
-                ", minDelete=" + minDelete +
-                ", avgDelete=" + avgDelete +
-                ", maxDelete=" + maxDelete +
-                '}';
+        return new GsonBuilder().create().toJson(this);
     }
 }
